@@ -1,0 +1,69 @@
+DOCUMENTATION FOR THE TICKET JIRA-602
+
+Project code location: 
+../4d-react-node-assessment/tests/e2e/wdio/results.spec.ts
+Steps: 
+Starting the frontend and backend server: 
+•	Open Terminal at the project location
+•	Start both frontend and backend servers
+o	npm run dev:full
+•	Or start them separately:
+o	npm run dev        - Frontend only
+o	npm run server    - Backend only
+Run code:
+Run command in Terminal -
+npm run test:wdio
+
+Code Structure:
+	Code is written in spec file – results.spec.ts in typescript language
+o	Path : tests\e2e\wdio\results.spec.ts
+	Path for this file is given in conf file -  wdio.con f as
+ specs: [
+        './tests/e2e/wdio/**/*.spec.ts'
+    ],
+	First browser is launched under describe 
+	First it block contains 1st test case - Form Submission through UI
+o	Here, each element is identified through xpath. Elements are clicked or values are set to fill the form.
+o	Consent button is checked
+o	Submit button is clicked.
+o	Results page is opened.
+o	Validated that data is added in row in Results page 
+	Second it block contains 2nd test case – Form Submission and Retrieving data through API
+o	Form submission through API POST method – axios.post
+o	Validated data submission through GET method by assert – checked the supervisorEmail is present or not
+
+
+
+DOCUMENTATION FOR THE TICKET JIRA-601
+
+Project code location: 
+../4d-react-node-assessment/tests/e2e/playwright/results.spec.ts
+Steps: 
+Starting the frontend and backend server: 
+•	Open Terminal at the project location
+•	Start both frontend and backend servers
+o	npm run dev:full
+•	Or start them separately:
+o	npm run dev        - Frontend only
+o	npm run server    - Backend only
+Run code:
+Run command in Terminal -
+npx playwright test --project=chromium –headed
+
+Code Structure:
+	Code is written in spec file – results.spec.ts in playright frame
+o	Path : tests\e2e\wdio\results.spec.ts
+	Path for this file is given in conf file -  playwright.config as
+testDir: './tests/e2e/playwright',
+
+	Step 1
+o	Browser is launched under launchPage.ts
+o	Start Managing Documents button is clicked
+
+	Step 2 
+o	Form Submission at – formPage.ts
+o	Here, each element is identified through xpath. Elements are clicked or values are set to fill the form.
+o	Consent button is checked
+o	Submit button is clicked.
+o	Results page is opened.
+o	Validated that data is added in row in Results page
