@@ -1,7 +1,7 @@
 DOCUMENTATION FOR THE TICKET JIRA-602
 
 Project code location: 
-../4d-react-node-assessment/tests/e2e/wdio/results.spec.ts
+../Assessment/tests/e2e/wdio/results.spec.ts
 Steps: 
 Starting the frontend and backend server: 
 •	Open Terminal at the project location
@@ -16,7 +16,7 @@ npm run test:wdio
 
 Code Structure:
 	Code is written in spec file – results.spec.ts in typescript language
-o	Path : tests\e2e\wdio\results.spec.ts
+o	Path : tests/e2e/wdio/results.spec.ts
 	Path for this file is given in conf file -  wdio.con f as
  specs: [
         './tests/e2e/wdio/**/*.spec.ts'
@@ -37,7 +37,7 @@ o	Validated data submission through GET method by assert – checked the supervi
 DOCUMENTATION FOR THE TICKET JIRA-601
 
 Project code location: 
-../4d-react-node-assessment/tests/e2e/playwright/results.spec.ts
+../Assessment/tests/e2e/playwright/results.spec.ts
 Steps: 
 Starting the frontend and backend server: 
 •	Open Terminal at the project location
@@ -52,7 +52,7 @@ npx playwright test --project=chromium –headed
 
 Code Structure:
 	Code is written in spec file – results.spec.ts in playright frame
-o	Path : tests\e2e\wdio\results.spec.ts
+o	Path : tests/e2e/wdio/results.spec.ts
 	Path for this file is given in conf file -  playwright.config as
 testDir: './tests/e2e/playwright',
 
